@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(59, 58, 58);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.celular-insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.celular-insta img {
+    height: 50rem;
+    
+}
+
+insta-continue {
+    display: flex;
+    align-items: center; /*Horizontal*/
+    justify-content: space-around; /*Vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid yellow;
+}
+
+.group:nth-child(1) {
+    min-width: 19rem;
+}
+
+.batgram-logo-1 {
+    height: 3rem;    
+}
+
+.foto-perfil {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center; 
+    margin:  8px;   
+}
+    
+.foto-perfil img{
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.instagram-logout {
+    color: whitesmoke;
+    margin-top: 2px;
+}
+
+.not-account {
+    color: white;
+}
+
+.link-blue {
+    color: #0c3c5c;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem;
+    color: aliceblue;    
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 100%;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./Banco\ de\ Imagens/googleplay-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./Banco\ de\ Imagens/apple-button.png');
+}
+
+@media (max-width: 1024px) {
+    .instagram-wraper {
+        width: 90%;
+    }
+}
+@media (max-width: 650px) {
+    .instagram-wraper {
+        width: 90%;
+    }
+    .insta-phone {
+        display: none;
+    }
+    .insta-continue {
+        width: 100%;
+    }
+    .group {
+        border: 1px solid transparent;
+    }
+    .app-download {
+        height: 4rem;
+    }
+}
